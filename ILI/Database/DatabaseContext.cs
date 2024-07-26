@@ -9,6 +9,8 @@ namespace ILI.Database
         public DbSet<Soldier> Soldiers { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Rank> Ranks { get; set; }
+
+        public DbSet<SensorType> SensorTypes { get; set; }
         public DbSet<Sensor> Sensors { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
