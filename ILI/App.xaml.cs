@@ -1,5 +1,4 @@
-﻿using System.Configuration;
-using System.Data;
+﻿using ILI.Database;
 using System.Windows;
 
 namespace ILI
@@ -9,6 +8,10 @@ namespace ILI
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            DatabaseSeeder.Seed();
+        }
     }
 
 }
